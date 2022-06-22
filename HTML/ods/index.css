@@ -1,0 +1,123 @@
+html {
+    background-color: #ffc60a;
+    scroll-behavior: smooth !important; 
+    /* esse cara q deixa a navegação suave :)*/ 
+}
+
+* {
+    margin: 0;
+}
+
+/*personalizar a barra de rolagem*/
+body::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+body::-webkit-scrollbar-track {
+    background: rgba(83, 83, 83, 0.479);
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 253, 238, 0.993) ;
+    border-radius: 3px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+}
+
+nav ul li {
+    margin: 10px 40px;
+    padding: 20px;
+    list-style: none;
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 40px;
+
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px 1px 15px;
+    
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .2s ease-in-out;
+}
+  
+nav ul li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+footer div {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+footer ul {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    font-family: mars;
+    margin: 20px auto;
+}
+
+footer ul li {
+    margin: 10px 40px;
+    padding: 30px;
+    list-style: none;
+    position: relative;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+}
+  
+footer ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 40px;
+
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px 1px 15px;
+    
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .2s ease-in-out;
+}
+  
+footer ul li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
